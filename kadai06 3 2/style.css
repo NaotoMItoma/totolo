@@ -1,0 +1,122 @@
+#head {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 800px;
+height: 200px;
+margin: 0px;
+padding: 0px;
+}
+
+#menu {
+position: absolute;
+top: 200px;
+left: 0px;
+width: 800px;
+height: 80px;
+margin: 0px;
+padding: 0px;
+}
+
+#main {
+position: absolute;
+top: 280px;
+left: 0px;
+width: 800px;
+height: 1000px;
+margin: 0px;
+padding: 0px;
+}
+
+#foot {
+position: absolute;
+top: 1280px;
+left: 0px;
+width: 800px;
+height: 80px;
+margin: 0px;
+padding: 0px;
+}
+
+body {
+text-align: center;
+margin: 0px;
+}
+
+#base { }
+position: relative;
+margin: 0px auto;
+width: 800px;
+height: 1000px;
+}
+/* メイン部分の画像の設定 */
+#main img {
+float: left; /* 画像を左寄せにし、かつ、文字を回り込ませる */
+margin: 0px;
+padding: 20px;
+width: 250px;
+}
+/* メイン部分の段落（文字部分）の設定 */
+#main p {
+text-align: right; /* 文字を左寄せ */
+margin: 0px;
+padding: 20px;
+}
+/* 画像に対する文字の回り込みを解除するクラス（pタグに設定する） */
+.clear_float {
+clear: both;
+}
+
+/* 曲再生部分（audioタグ）の設定 */
+#main audio {
+width: 200px;
+}
+/* 曲目リスト（表）部分の設定 */
+#main table {
+text-align: center; /* 表内文字を中央寄せ */
+margin: auto; /* 表自体を中央寄せ */
+width: 600px;
+border-collapse: collapse; /* セルの境界線を共有させる */
+}
+/* 表の見出しセル（thタグ）の設定 */
+#main th {
+background-color: #orange;
+border: solid 1px #000000; /* 境界線を実線黒色1pxに設定 */
+}
+
+
+
+
+/* メニュー領域の幅と余白を設定 */
+#navi{
+width: 800px; /* ページの横幅に合わせる */
+margin: 0; /* 余白(外側)を無しに設定 */
+padding: 0; /* 余白(内側)を無しに設定 */
+}
+/* 番号なし箇条書きタグ(UL)を横並びメニュー向けの設定に変更 */
+#navi ul{
+list-style-type: none; /* 箇条書きのマーク（●）を非表示 */
+margin: 0;
+padding: 0;
+}
+/* 番号なし箇条書きタグ(LI)を横並びメニュー向けの設定に変更 */
+#navi li{
+float: left; /* 項目を左から横に並べるための設定 */
+}
+
+/* 番号なし箇条書きタグ(LI)を横並びメニュー向けの設定に変更 */
+#navi a{
+text-align: center; /* 文字を中央寄せにする */
+text-decoration: none; /* リンクの下線を非表示にする */
+display: block; /* 横並び設定のポイント(2) */
+width: 200px; /* メニュー１つ分の幅を設定 */
+height: 50px; /* メニュー１つ分の高さを設定 */
+line-height: 50px; /* heightと同じ値にすることで文字を縦方向に中央寄せ */
+background-color: orange; /* メニューの背景色を設定(※16進数カラーコードでも設定可能) */
+color: black; /* メニューの文字色を設定(※16進数カラーコードでも可) */
+}
+/* マウスオーバーで変色する設定 */
+#navi a:hover{
+background-color: red; /* 背景色 */
+color: white; /* 文字色 */
+}
